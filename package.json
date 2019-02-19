@@ -1,8 +1,8 @@
 {
-  "name": "utils-use",
+  "name": "dutils",
   "version": "1.5.0",
   "description": "前端业务代码工具库",
-  "main": "min/utils-use.min.js",
+  "main": "min/dutils.min.js",
   "types": "index.d.ts",
   "scripts": {
     "build": "node script/build.js",
