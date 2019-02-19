@@ -8,19 +8,20 @@ const chalk = require('chalk')
 const rootPath = path.resolve(__dirname, '../')
 
 // 替换模块文件
+// 终端旋转动效
 let copying = ora('copying...')
 copying.start()
 rm('*.js', err => {
   if (err) throw (err)
   let folderList = fs.readdirSync(path.resolve(rootPath, 'src'))
-  folderList.forEach((item, index) => {
-    // copy(被复制path，dest，cb)
-    copy(`src/${item}/*.js`, rootPath, function (err, files) {
-      if (err) throw err;
-      if (index === folderList.length - 1) {
-        console.log(chalk.cyan('  Copy complete.\n'))
-        copying.stop()
-      }
-    })
-  })
+  // folderList.forEach((item, index) => {
+  //   // copy(被复制path，dest，cb)
+  //   copy(`src/${item}/*.js`, rootPath, function (err, files) {
+  //     if (err) throw err;
+  //     if (index === folderList.length - 1) {
+  //       console.log(chalk.cyan('  Copy complete.\n'))
+  //       copying.stop()
+  //     }
+  //   })
+  // })
 })
