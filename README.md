@@ -50,11 +50,11 @@ const OS = getOS()
 
 
 - 获取url参数值~
-- 判断是否每天存在一次storage
+- 判断是否每天存在一次storage ~
 - getcookie
 - setCookie
 - 对象/数组深拷贝
-- 取区间值随机数
+- 取区间值随机数 ~
 - 获取过去时间
 - 将时间戳转换成时分秒
 - throttle
