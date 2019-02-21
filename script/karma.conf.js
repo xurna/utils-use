@@ -79,7 +79,7 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['Chrome'], // 只用Chrome作为浏览器测试，需要安装karma-chrome-launcher 
 
     customLaunchers: {
       Chrome: {
