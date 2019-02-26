@@ -1,0 +1,50 @@
+<html>
+<head>
+</head>
+<body>
+
+
+</body>
+
+</html>
+<script>
+function isObject(value) {
+  const type = typeof value
+  return value != null && (type == 'object' || type == 'function')
+}
+
+function deepClone(obj, hash = new WeakMap()) {
+  let cloneObj
+  let Constructor = obj.constructor
+  console.log(1, Constructor)
+  switch (Constructor) {
+    case RegExp:
+      cloneObj = new Constructor(obj)
+      break
+    case Date:
+      cloneObj = new Constructor(obj.getTime())
+      break
+    default:
+      if (hash.has(obj)) return hash.get(obj)
+      cloneObj = new Constructor()
+      hash.set(obj, cloneObj)
+      console.log(2, hash.get(obj))
+  }
+  for (let key in obj) {
+    console.log(3, key, cloneObj)
+    cloneObj[key] = isObject(obj[key]) ? deepClone(obj[key], hash) : obj[key];
+    console.log(4, key,cloneObj[key])
+  }
+  return cloneObj
+}
+const obj1 = {
+  arr: [111, 222],
+  obj: { key1: '对象', key2: '对象' },
+  a: () => { console.log('函数') },
+  date: new Date(),
+  reg: /正则/ig
+}
+
+var obj2 = deepClone(obj1)
+console.log(obj2, JSON.stringify(obj2), obj1 === obj2)
+</script>
