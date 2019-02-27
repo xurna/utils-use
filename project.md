@@ -11,6 +11,7 @@
   npm publish
   ```
 - 清理发布环境：`npm run remove`，提交代码到git仓库
+- 恢复npm淘宝镜像源：`npm config set registry https://registry.npm.taobao.org`
 
 
 ## 断言接口
