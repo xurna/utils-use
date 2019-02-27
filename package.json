@@ -1,6 +1,6 @@
 {
   "name": "dutilsss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "前端业务代码工具库",
   "main": "min/dutilsss.min.js",
   "types": "index.d.ts",
@@ -8,6 +8,7 @@
     "build": "node script/build.js",
     "build-copy": "node script/build-copy.js",
     "build-pack": "node script/build-pack",
+    "remove": "node script/removeRootJs",
     "test": "npm run build-pack && karma start script/karma.conf.js"
   },
   "repository": {
