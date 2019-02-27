@@ -1,6 +1,20 @@
+## npm包发布
+- 修改`package.json`文件的`version`字段
+- 项目打包：`npm run build`
+- 项目发布：
+  ```js
+  //登录npm账号
+  npm login
+  //修改npm源
+  npm set registry https://registry.npmjs.org/
+  //发布
+  npm publish
+  ```
+- 清理发布环境：`npm run remove`，提交代码到git仓库
+
 
 ## 断言接口
-```
+```js
 - 判断类
 assert(value, [message])
 assert.ok(value, [message])
