@@ -1,4 +1,4 @@
-# dutils
+# dutilsss
 
 前端业务代码工具库  
 
@@ -8,36 +8,36 @@
 
 ## :building_construction:  安装使用
 
-1. 直接下载`min`目录下的[dutils.min.js](https://github.com/xurna/utils-use/blob/master/min/dutils.min.js)使用，支持UMD通用模块规范  
+1. 直接下载`min`目录下的[dutilsss.min.js](https://github.com/xurna/utils-use/blob/master/min/dutilsss.min.js)使用，支持UMD通用模块规范  
 2. 使用npm安装
 
 ### 浏览器:
 ``` html
-  <script src="dutils.min.js"></script>
+  <script src="dutilsss.min.js"></script>
   <script>
-      var judge = dutils.isObject()
+      var judge = dutilsss.isObject()
   </script>
 ```
 
 ### npm:
 ``` bash
-$ npm install --save-dev dutils
+$ npm install --save-dev dutilsss
 ```
 
 webpack、RequireJS、SeaJS等
 
 ``` javascript
 // 完整引入
-const dutils = require('dutils')
-const judge = dutils.isObject()
+const dutilsss = require('dutilsss')
+const judge = dutilsss.isObject()
 ```
 
 **推荐使用方法**  
 
 若不需要完整引入所有函数，则只引入需要使用的方法即可。
 ``` javascript
-// 只引入部分方法('dutils/<方法名>')
-const isObject = require('dutils/isObject')
+// 只引入部分方法('dutilsss/<方法名>')
+const isObject = require('dutilsss/isObject')
 const judge = isObject()
 ```
 ## :package:  API文档

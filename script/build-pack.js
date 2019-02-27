@@ -5,7 +5,7 @@ const chalk = require('chalk')
 const webpack = require('webpack')
 
 const config = require('./webpack.conf')
-const pkg = { name: 'dutils' }
+const pkg = require('../package.json')
 const rootPath = path.resolve(__dirname, '../')
 
 // 构建全量压缩包

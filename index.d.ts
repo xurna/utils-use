@@ -1,5 +1,5 @@
 // 类型定义文件
-declare namespace dutils {
+declare namespace dutilsss {
   /**
    * 
    * @desc   随机从数组中获取不重复的几个元素
@@ -108,6 +108,6 @@ declare namespace dutils {
 
 }
 
-declare module "dutils" {
-  export = dutils
+declare module "dutilsss" {
+  export = dutilsss
 }
