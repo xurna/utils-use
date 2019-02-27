@@ -1,8 +1,9 @@
 {
   "name": "dutilsss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "前端业务代码工具库",
   "main": "min/dutilsss.min.js",
+  "private": false,
   "types": "index.d.ts",
   "scripts": {
     "build": "node script/build.js",
