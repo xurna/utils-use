@@ -1,6 +1,6 @@
 /**
  * 
- * @desc   随机从数组中获取不重复的几个元素（洗牌算法）
+ * @desc   随机从数组中获取不重复的几个元素
  * @param  {Array} arr 数组
  * @param  {Number} count 随机取的个数
  * @return {Array} 

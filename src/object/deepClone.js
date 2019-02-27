@@ -37,8 +37,10 @@ function deepClone(values) {
 
   // Handle Object
   if (values instanceof Object) {
+    console.log(1, values);
     copy = {};
     for (var attr in values) {
+      console.log(2, attr, values[attr]);
       if (values.hasOwnProperty(attr)) copy[attr] = deepClone(values[attr]);
     }
     return copy;
@@ -46,14 +48,5 @@ function deepClone(values) {
 
   throw new Error("Unable to copy values! Its type isn't supported.");
 }
-const obj1 = {
-  arr: [111, 222],
-  obj: { key1: '对象', key2: '对象' },
-  date: new Date(),
-  reg: /正则/ig,
-}
-// var obj1 = 'yang'
 
-var obj2 = deepClone(obj1)
-console.log(obj2, obj1 === obj2)
 module.exports = deepClone

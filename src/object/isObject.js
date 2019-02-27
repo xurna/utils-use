@@ -1,8 +1,8 @@
 /**
  * Checks if `value` is the `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String('')`)
  *
- * @param {*} value The value to check.
- * @returns {boolean} Returns `true` if `value` is an object, else `false`.
+ * @param {Any} value The value to check.
+ * @returns {Boolean} Returns `true` if `value` is an object, else `false`.
  * @example
  *
  * isObject({})

@@ -16,8 +16,10 @@
   },
   "keywords": [
     "util",
+    "utils",
     "tool",
-    "common-util"
+    "common-util",
+    "common-use"
   ],
   "author": "XurnaYang",
   "license": "MIT",
